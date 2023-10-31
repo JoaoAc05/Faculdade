@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/person.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portifólio</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/logo-removebg-preview.png" alt="">
+        
+        <nav>
+            <ul>
+                <li onclick="scrollToDiv('home')">Home</li>
+                <li onclick="scrollToDiv('sobre-mim')">Sobre Mim</li>
+                <li onclick="scrollToDiv('projetos')">Projetos</li>
+                <li onclick="scrollToDiv('social')"> Social</li >
+            </ul>
+        </nav>
+        
+    </header>
+    <main id="corpo">
+        <div id="home" class="container">
+            <section id="image-home">
+                <img src="imagens/logo-removebg-preview.png" alt="">
+            </section>
+            <section><h1>HELLO WORD!</h1>
+                <p>Oi, meu nome é <br>
+                <span id="my-name">
+                    <noscript>João Alves</noscript>
+                </span>
+                <br> e te convido a me conhecer um pouco mais!</p>
+            </section>
+        </div>
+        <div id="sobre-mim" class="container">
+            <section>
+                <h1>Sobre mim</h1>
+                <p>Meu nome é João Alves, nascido em 2005, moro em Sinop-MT.
+                Tive contato a primeira vez com a área de programação em 2019 a partir de acompanhamento do meu irmão na realização da faculdade, mas iniciei meus estudos em 2022 ainda no ensino médio, com lógica de programação, HTML e CSS.</p>
+                <p>Hoje estou realizando o curso tecnólogo de ADS (Análise e Desenvolvimento de Sitemas) na Unifasipe(Sinop), ainda no 1º Semestre. <br>
+                Gosto de explorar novas areas da programação e desenvolver projetos!</p>
+                <div id="a" >
+                    <p class="p-ancora"><a href="https://www.linkedin.com/in/joão-alves-cordeiro-762784281/" target="_blank" rel="external">Linkedin</a></p>
+                </div>
+            </section>
+            <section>
+                <img src="imagens/Social2.jpg" alt="Foto de João Alves">
+            </section>
+        </div>
+        <div id="projetos" class="container">
+            <h1>Projetos</h1>
+            <a href="https://joaoac05.github.io/Faculdade_ADS/aulas/1-semestre/programacao-web/ex008/Atividade3/index.html" target="_blank" rel="external">
+                <section class="projetos" id="pokedex">
+                </section>
+            </a>
+            <a href="https://joaoac05.github.io/Cursos/HTML/ex002/index.html" target="_blank" rel="external">
+                <section class="projetos" id="google-glass">
+                </section>
+            </a>
+            <section class="projetos">
+                <noscript>EM BREVE</noscript>
+            </section>
+            <br>
+            <section class="projetos">
+                <noscript>EM BREVE</noscript>
+            </section>
+            <section class="projetos">
+                <noscript>EM BREVE</noscript>
+            </section>
+            <section class="projetos">
+                <noscript>EM BREVE</noscript>
+            </section>
+            <br>
+            <section id="p-ancora">
+                <p class="p-ancora"><a href="https://github.com/JoaoAc05" target="_blank" rel="external">Repositório no GitHub</a></p>
+            </section>
+        </div>
+        <div id="social" class="container">
+            <h1>Certificações</h1>
+            <div class="p">
+                <div>
+                    
+                    <a href="certificacao/html-css123.pdf" target="_blank" rel="external"> 
+                        <section class="certificacao" id="html">
+                        </section>
+                    </a>
+                    <p>HTML-CSS 120HRS</p>
+                </div>
+                <div>
+                    <a href="certificacao/Certificado-html5.pdf" target="_blank" rel="external">
+                        <section class="certificacao" id="html-js">
+                        </section>
+                    </a>
+                    <p>HTML-CSS-JS 40HRS</p>
+                </div>
+                <div id="logica">
+                    <section class="certificacao" >
+                        <noscript>EM BREVE</noscript>
+                    </section>
+                    <p>Logica de Programação: realizando</p>
+                </div>
+                <!-- Ideia: Criar botão de ver mais -->
+            </div>
+
+            <div id="social-end">
+                <p>Obrigado por conhecer um pouco da minha história!</p>
+                <p>Atualmente estou em busca de uma oportunidade como programador junior. Disponibilidades de contatos a baixo.</p>
+                <a href="https://www.instagram.com/joao_a_c_/" target="_blank" rel="external"><img src="imagens/instagram.ico" alt="Instagram"></a>
+                <a href="#"><img src="imagens/email.ico" alt="Email"></a>
+                <a href="https://github.com/JoaoAc05" target="_blank" rel="external"><img src="imagens/github.ico" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/joão-alves-cordeiro-762784281/" target="_blank" rel="external"><img src="imagens/linkedin.ico" alt="Linkedin"></a>
+            </div>
+        </div>
+    </main>
+    <script src="js/comands.js">
+    </script>
+</body>
+</html>

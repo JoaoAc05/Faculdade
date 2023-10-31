@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par Impar</title>
+</head>
+<body>
+    <h1>Verificação de número</h1>
+    <button onclick="calc_pi()">Par ou Impar</button>
+    <p id="scape">Aqui será exibido o resultado</p>
+    <script>
+        function calc_pi() {
+            let num = window.prompt("Digite um número")
+            if (num % 2 == 0) {
+                document.getElementById("scape").innerHTML = `Seu número: ${num} é par`;
+            }
+            else {
+                document.getElementById("scape").innerHTML = `Seu número: ${num} é impar`;
+            }
+        }
+    </script>
+</body>
+</html>

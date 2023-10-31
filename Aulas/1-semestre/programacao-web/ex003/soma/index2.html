@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soma</title>
+  </head>
+  <body>
+    <h1>Soma de dois números</h1>
+    <button onclick="soma()">Clique para somar</button>
+    <script>
+      function soma() {
+        let n1 = Number(window.prompt("Digite o Primeiro número: "));
+        let n2 = Number(window.prompt("Digite o Segundo número: "));
+        let calculo = n1 + n2;
+
+        window.alert("Seu resultado foi: " + calculo);
+      }
+    </script>
+  </body>
+</html>

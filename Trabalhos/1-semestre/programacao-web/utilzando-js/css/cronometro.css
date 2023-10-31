@@ -1,0 +1,36 @@
+:root {
+    --color1: #2626ee;
+    --color2: #78d9ff;
+    --color3: #bbbbbb;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 100px;
+    
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+}
+header p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+header h1 {
+    margin-top: 0px;
+}
+
+main {
+    width: 800px;
+    height: 200px;
+    margin: auto;
+    padding: 20px;
+
+    background-color: var(--color3);
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 2px 2px 3px #0000005b;
+}

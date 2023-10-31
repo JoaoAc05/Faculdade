@@ -1,0 +1,1 @@
+Aqui você tem o primeiro contato com as linguagens de programação iniciando com o Python e colocando em pratica a lógica desenvolvida em matérias antecedentes, depois indo para Java.

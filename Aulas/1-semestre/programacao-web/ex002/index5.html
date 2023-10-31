@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Introdução a JavaScript</title>
+</head>
+<body>
+    <h1>Trabalhando com Calculos</h1>
+    <button onclick="calcular()">
+        Clique para Calcular
+    </button>
+
+    <section id="resultado">
+        <p>Aqui sera exibido seu resultado...</p>
+    </section>
+
+    <script>
+        window.alert('Seja Bem Vindo ao Site')
+
+        function calcular() {
+            let n1 = window.prompt('Digite um número: ')
+            let res = document.querySelector('section#resultado')
+
+            res.innerHTML = `<p>O dobro de ${n1} é ${n1*2} e a metade é ${n1/2}`
+        }
+    </script>
+
+    <!--Dia 20/03/2023 - Professora Leticia -->
+</body>
+</html>

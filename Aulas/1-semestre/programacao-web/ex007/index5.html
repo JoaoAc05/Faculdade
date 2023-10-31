@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 300px;
+            padding: 10px;
+            position: absolute;
+            left: 35%;
+            top: 25%;
+
+            text-align: center;
+            background-color: #0303c9;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px #0000006b;
+        }
+        div p {
+            font-weight: bold;
+            font-size: 1.3em;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="enter" placeholder="Digite seu CEP"> <button onclick="opCEP()">Localizar</button>
+        <br> <br>
+        <p id="scape"></p>
+    </div>
+    
+
+    <script>
+        function opCEP () {
+        let cep = document.getElementById("enter").value;
+        var url = `https://viacep.com.br/ws/${cep}/json/`;
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET",url,false);
+        xhttp.send();
+        respostaJSON = JSON.parse(xhttp.responseText);
+        console.log(respostaJSON);
+        document.getElementById("scape").innerHTML = `Cidade: ${respostaJSON.localidade} <br> Estado: ${respostaJSON.uf} <br> Endereço: ${respostaJSON.logradouro} 
+        <br> Complemento: ${respostaJSON.complemento}`
+        }
+    </script>
+</body>
+</html>

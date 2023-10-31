@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Introdução a JavaScript</title>
+</head>
+<body>
+    <h1>Trabalho de Calculadora</h1>
+    <label>Valor 1</label>
+    <input type="number" id="valor1"> 
+    <br> <br>
+    <label>Valor 2</label>
+    <input type="number" id="valor2"> 
+    <br><br>
+
+    <button onclick="soma()">+</button>
+    <button onclick="subtracao()">-</button>
+    <button onclick="multiplicacao()">x</button>
+    <button onclick="divisao()">/</button> 
+    <br><br>
+    
+    <label>Resultado</label>
+    <input type="number" id="resultado" disabled>
+
+    <script>
+        window.alert('Seja Bem Vindo a Calculadora!')
+
+        function soma() {
+            let valor1 = Number(document.getElementById("valor1").value);
+            let valor2 = Number(document.getElementById("valor2").value);
+            let resultado = valor1 + valor2;
+            document.getElementById("resultado").value = resultado;
+        }
+
+        function subtracao() {
+            let valor1 = Number(document.getElementById("valor1").value);
+            let valor2 = Number(document.getElementById("valor2").value);
+            let resultado = valor1 - valor2;
+            document.getElementById("resultado").value = resultado
+        }
+
+        function multiplicacao() {
+            let valor1 = Number(document.getElementById("valor1").value);
+            let valor2 = Number(document.getElementById("valor2").value);
+            let resultado = valor1 * valor2 
+            document.getElementById("resultado").value = resultado
+        }
+
+        function divisao() {
+            let valor1 = Number(document.getElementById("valor1").value);
+            let valor2 = Number(document.getElementById("valor2").value);
+            let resultado = valor1 / valor2 
+            document.getElementById("resultado").value = resultado
+        }
+    </script>
+    <!--Dia 20/03/2023 - Professora Leticia -->
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html lang="pt-br">
+<head>
+   <meta charset ="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Document</title>
+	<style>
+	select {
+	width: 100px
+	
+	}
+	</style>
+
+</head>
+<body>
+   <h1>Estados do Brasil</h1>
+   <select id="select" name="select"></select>
+   <script>
+	url ="https://servicodados.ibge.gov.br/api/v1/localidades/distritos";
+	fetch(url)
+	.then(function(data) {
+	   let select = document.getElementById("select")/
+	   return data.map(function(uf) {
+	      select.innerHTML += `<option value="${uf.id}">${uf.nome}</option>`;
+	   })
+	})
+	.catch(function(error) { console.log(error); });
+	
+   </script>
+</body>
+</html>

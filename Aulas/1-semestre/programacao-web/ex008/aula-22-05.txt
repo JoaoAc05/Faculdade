@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html lang="pt-br">
+<head>
+   <meta charset ="UTF-8">
+   <title>Document</title>
+
+</head>
+<body>
+   <h1>Estados do Brasil</h1>
+   <ul id="ufs"></ul>
+   <script>
+	url ="https://servicodados.ibge.gov.br/api/v1/localidades/estados";
+	fetch(url)
+	.then{(resp) => res.json()};
+	.then(function(data){
+	let list = document.getElementById('ufs');
+	return data.map(function(uf){
+	let li = document.createElement("li");
+	li.innerText =uf.nome +"-"+ uf.sigla;
+	list.appendChild(li);
+	})
+	})
+	.catch(function(error){
+	console.log(error);
+	})
+   </script>
+</body>
+</html>

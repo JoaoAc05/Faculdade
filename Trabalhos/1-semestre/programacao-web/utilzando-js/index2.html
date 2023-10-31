@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/vogais.css">
+    <title>Calculadora de Vogais</title>
+</head>
+<body>
+    <header>
+        <h1>Contador de Vogais</h1>
+        <p>For exercises</p>
+    </header>
+
+	<main>
+        <p>Digite uma palavra para contar suas vogais:</p>
+        <input type="text" id="input" size="15">
+        <button onclick="contarVogais()">Contar</button>
+        <p id="output"></p>
+    </main>
+	<script>
+		function contarVogais() {
+			let string = document.getElementById("input").value.trim().toLowerCase();
+			let count = 0;
+			if (string.length === 0) {
+				document.getElementById("output").innerHTML = "Por favor, digite uma palavra.";
+				return;
+			}
+			for (let i = 0; i < string.length; i++) {
+				let letter = string[i];
+				if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u') {
+					count++;
+				}
+			}
+			if (count === 0) {
+				document.getElementById("output").innerHTML = "A palavra \"" + string + "\" não contém vogais.";
+			} else {
+				document.getElementById("output").innerHTML = "A palavra \"" + string + "\" tem " + count + " vogais.";
+			}
+		}
+	</script>
+    <!--GPT-->
+</body>
+</html>

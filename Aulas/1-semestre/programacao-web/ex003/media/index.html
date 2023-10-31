@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <!--Faça um código js onde o usuário recebe 3 notas via prompt
+        e realiza a média aritmética e mostra no HTML se o aluno 
+        ficou de exame (entre 4 e 6,9)
+        aprovado (maior que 7)
+        reprovado (menor que 4).-->
+        <h1>Calculadora de Média</h1>
+        <button onclick="calc_media()">Media</button>
+        <script>
+            function calc_media() {
+                let n1 = Number(window.prompt("Digite a sua primeira nota: "))
+                let n2 = Number(window.prompt("Digite a sua segunda nota: "))
+                let n3 = Number(window.prompt("Digite a sua terceira nota: "))
+                let media = (n1 + n2 + n3) / 3
+
+                if (media > 7) {
+                    window.alert("Parabéns, você está aprovado. Sua média è " + media)
+                }
+                else if ( media < 7 & media >= 4) {
+                    window.alert("Você está em exâme! Sua média è " + media)
+                }
+                else {
+                    window.alert("Você está reprovado! Sua média è " + media)
+                }
+            }
+        </script>
+</body>
+</html>

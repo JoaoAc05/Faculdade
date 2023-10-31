@@ -1,0 +1,582 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+
+:root {
+    --font-titulo: 'Press Start 2P', cursive, sans-serif;
+    --font-texto: 'Outfit', sans-serif;
+    --color-back: #232833;
+    --color-leters: #ffffff;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Inicio Header */
+    header {
+        height: 70px;
+        width: 99.99%;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        /*  */
+        background-color: #1f1f1f52;
+        border-bottom: 1px solid #00000077;
+        backdrop-filter: blur(2px);
+        color: var(--color-leters);
+    }
+    header ul {
+        display: flex;
+        margin: 20px 40px 0px 0px;
+        /*  */
+        text-align: center;
+    }
+    header li {
+        margin-right: 30px;
+        /*  */
+        text-decoration: none;
+        list-style: none;
+        font-size: 1.2em;
+    }
+    header a {
+        text-decoration: none;
+        color: var(--color-leters);
+    }
+    header li:hover {
+        cursor: pointer;
+    }
+/* Fim Header */
+
+/* Inicio Body e Gerais */
+    body {
+        background-color: var(--color-back);
+        color: var(--color-leters);
+    }
+    body a {
+        text-decoration: none;
+    }
+    span {
+        font-size: 1.5em;
+        font-family: var(--font-titulo);
+    }
+    h1 {
+        font-family: var(--font-titulo);
+    }
+    /*  */
+    div.container {
+        height: 100vh; 
+        /*  */
+        border-top: 3px solid #ffffff0e;
+    }
+    div.container p{
+        font-family: var(--font1);
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+/* Fim Body e Gerais*/
+
+/* Inicio Botão com Link */
+    section#p-ancora {
+        width: 300px;
+        height: 50px;
+        margin-top: 20px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        /*  */
+        text-align: center;
+    }
+    .p-ancora { 
+        width: 250px;
+        padding: 10px;
+        transition: 0.6s; 
+        /*  */
+        border: 2px solid #ffffff38;
+        border-radius: 20px;
+        text-align: center;
+        background-color: #ffffff10;
+        backdrop-filter: blur(2px);
+        
+    }
+    .p-ancora a{
+        color: #db7f33;
+    }
+/* Fim Botão com Link */
+
+/* Inicio Container Home */
+    div#home {
+        display: flex; /*Possibilita mobilidade*/
+        justify-content: center; /* Alinha o conteúdo à esquerda */
+        align-items: center; /* Centraliza verticalmente */
+        /*  */
+        background-image: linear-gradient(to top right, #00000000 53%, #ffffff08 47%);
+    }
+    div#home p{
+        padding: 20px;  
+    }
+    div#home section h1{
+        margin-left: 20px;
+    }
+
+    /* 
+        Animação da imagem no Home
+        
+        @keyframes slideUpDown {
+        0% { transform: translateY(0%); }
+        50% { transform: translateY(-20%); }
+        100% { transform: translateY(0%); }
+    }
+    #image-home img{
+        animation: slideUpDown 3s infinite;
+    } 
+    
+    */
+
+/* Fim Container Home */
+
+/* Inicio Container Sobre-Mim */
+    div#sobre-mim {
+        display: flex;
+        text-align: justify;
+        align-items: center;
+    }
+    div#sobre-mim section {
+        padding: 30px;
+        width: 800px;
+        height: 600px;
+    }
+    div#sobre-mim img {
+        width: 350px;
+        height: 350px;
+        margin-left: 100px;
+        /*  */
+        box-shadow: 5px 5px 8px #ffffff0c;
+        border-radius: 70px;
+    }
+    div#sobre-mim h1 {
+        margin-top: 80px 0px 15px 0px;
+        /*  */
+        font-size: 1.9em;
+    }
+    div#sobre-mim p {
+        margin-bottom: 10px;
+    }
+/* Fim Container Sobre-Mim */
+
+/* Inicio Container Projetos */
+    div#projetos {
+        padding: 30px;
+        /*  */
+        text-align: center;
+    }
+    section.projetos {
+        width: 250px;
+        height: 275px;
+        margin: 20px;
+        padding: 30px;
+        display: inline-block;
+        /*  */
+        border: 1px solid #ffffff60;
+        border-radius: 10px;
+        background-color: #ffffff15;
+    }
+
+    .projetos#pokedex {
+    background-image: url(../imagens/pokedex.jpg);
+    background-size: contain;
+    background-position: center center;
+    } 
+    .projetos#google-glass {
+        background-image: url(../imagens/gg2.png);
+        background-size: contain;
+        background-position: center top; 
+    }
+/* Fim Container Projetos */
+
+/* Inicio Container Social */
+    div#social {
+        height: 70vh;
+    }
+    div#social h1 {
+        margin-top: 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    section.certificacao {
+        width: 260px;
+        height: 200px;
+        margin: 20px;
+        padding: 30px;
+        /*  */
+        border: 1px solid #ffffff60;
+        border-radius: 10px;
+        background-color: #ffffff15;
+    }
+    div#social div.p {
+        height: 480px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    div.p div {
+        margin: 30px 20px 0px 20px;
+        height: 375px;
+        /*  */
+        text-align: center;
+    }
+    section.certificacao#html {
+        background-image: url(../certificacao/Certificado-html_e_css-1.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    section.certificacao#html-js {
+        background-image: url(../certificacao/Certificado-html_e_css-1.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+    div#social div#social-end {
+        height: 160px;
+        justify-content: end;
+        /*  */
+        text-align: center;
+        font-size: 1.4em;
+    }
+    div#social div#social-end img {
+        width: 75px;
+        height: 75px;
+        transition: 0.4s linear;
+    }
+    div#social div#social-end img:hover {
+        box-shadow: 5px 5px 10px #ffffff41;
+    }
+    div#social div#social-end a {
+        margin: 10px 20px 0px 20px;
+    }
+/* Fim Container Social */
+
+/* Inicio Responsividades */
+@media screen and (min-width: 993px) and (max-width: 1400px) { /* Responsividade de Desk Top */
+
+/* Home */
+div#home img {
+    width: 530px;
+    /* height: ; */
+}
+/* Fim */
+
+/* Sobre-Mim */
+    div#sobre-mim img {
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+/* Fim */
+
+/* Projetos */
+    div#projetos {
+        text-align: center;
+        padding: 20px;
+    }
+    div#projetos section.projetos {
+        width: 200px;
+        height: 235px;
+        margin: 10px;
+        padding: 20px;
+        display: inline-block;
+        /*  */
+        border: 1px solid #ffffff60;
+        border-radius: 10px;
+        background-color: #ffffff15;
+        /* align-items: center; */
+    }
+/* Fim */
+
+/* Social */
+    section#p-ancora {
+        margin-top: 15px;
+    }
+
+    section.certificacao {
+        width: 230px;
+        height: 200px;
+        margin: 10px;
+        padding: 20px;
+    }
+    div#social div.p {
+        height: 430px;
+        margin-bottom: 20px;
+    }
+    div.p div {
+        margin: 10px 5px 0px 10px;
+        height: 375px;
+    }
+/* Fim */
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Responsividade de Tablets*/
+ 
+/* Home */
+div#home img {
+    width: 490px;
+    height: 380px;
+}
+/* Fim */    
+
+/* Sobre-Mim */
+    div#sobre-mim section {
+        padding: 30px;
+        width: 550px;
+        height: 475px;
+        
+    }
+    div#sobre-mim img {
+        width: 300px;
+        height: 300px;
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+    div#sobre-mim h1 {
+        margin-top: 70px;
+        margin-bottom: 10px;
+        /*  */
+        font-size: 1.7em;
+    }
+    div#sobre-mim p {
+        margin-bottom: 10px;
+        /*  */
+        font-size: 1.2em;
+    }
+/* Fim */
+
+/* Projetos */
+    div#projetos {
+        text-align: center;
+        padding: 10px;
+    }
+    div#projetos section.projetos {
+        width: 175px;
+        height: 205px;
+        margin: 5px;
+        padding: 10px;
+        display: inline-block;
+        /*  */
+        border: 1px solid #ffffff60;
+        border-radius: 10px;
+        background-color: #ffffff15; 
+    }
+/* Fim */
+
+/* Social */
+    section#p-ancora {
+        margin-top: 20px;
+    }
+
+    section.certificacao {
+        width: 200px;
+        height: 150px;
+        margin: 10px;
+        padding: 10px;
+    }
+    div#social div.p {
+        height: 350px;
+        margin-bottom: 20px;
+        /*  */
+        font-size: 0.8em;
+    }
+    div.p div {
+        margin: 10px 5px 0px 5px;
+        height: 235px;
+    }
+/* Fim */
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) { /*Responsividade de Celulares*/
+    div {
+        height: 80vh; 
+    }
+
+/* Home */
+div#home img {
+    width: 370px;
+    height: 260px;
+}
+/* Fim */    
+
+
+/* Sobre-Mim */
+    div#sobre-mim section {
+        width: 400px;
+        height: 375px;
+        padding: 20px;
+    }
+    div#sobre-mim img {
+        width: 250px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 15px;
+        /*  */
+        box-shadow: 5px 5px 8px #ffffff27;
+        border-radius: 60px;
+    }
+    div#sobre-mim h1 {
+        margin-top: 70px;
+        margin-bottom: 10px;
+        /*  */
+        font-size: 1.5em;
+    }
+    div#sobre-mim p {
+        margin-bottom: 10px;
+        /*  */
+        font-size: 1.1em;
+    }
+/* Fim */
+    
+/* Projetos */
+    div#projetos {
+        padding: 10px;
+        /*  */
+        text-align: center;
+    }
+    div#projetos section.projetos {
+        width: 160px;
+        height: 190px;
+        margin: 3px;
+        padding: 7px;
+        display: inline-block;
+        /*  */
+        border: 1px solid #ffffff60;
+        border-radius: 10px;
+        background-color: #ffffff15; 
+    }
+/* Fim */
+
+/* Social */
+    section#p-ancora {
+        margin-top: 15px;
+    }
+    section.certificacao {
+        width: 220px;
+        height: 150px;
+        margin: 10px;
+        padding: 10px;
+    }
+    div#social div.p {
+        height: 320px;
+        margin-bottom: 20px;
+        /*  */
+        font-size: 0.8em;
+    }
+    div.p div {
+        margin: 5px 5px 0px 10px;
+        height: 205px;
+    }
+    div#logica {
+        display: none;
+    }
+/* Fim */
+}
+
+@media screen and (max-width: 576px) { /*Responsividade Preventiva*/
+    body {
+        width: 100%;
+    }
+    div {
+        height: 70vh; 
+    }
+
+/* Home */
+div#home img {
+    display: none;
+}
+/* Fim */    
+.p-ancora { 
+    width: 200px;
+    
+    padding: 10px;
+}
+/* Sobre-Mim */
+    div#sobre-mim section {
+        padding: 10px;
+        width: 370px;
+        height: 345px;
+    }
+    div#sobre-mim img {
+        display: none;
+        /* margin-top: 100px;
+        width: 190px;
+        height: 190px;
+        margin-left: 0px;
+        margin-right: 0px;
+    
+        box-shadow: 5px 5px 8px #ffffff27;
+        border-radius: 60px; */
+    }
+    div#sobre-mim h1 {
+        margin-top: 55px;
+        margin-bottom: 10px;
+        /*  */
+        font-size: 1.4em;
+    }
+    div#sobre-mim p {
+        margin-bottom: 10px;
+        /*  */
+        font-size: 1em;
+        
+    }
+/* Fim */
+    
+/* Projetos */
+    div#projetos {
+        padding: 10px;
+        /*  */
+        text-align: center;
+    }
+    
+    div#projetos section.projetos {
+        width: 140px;
+        height: 150px;
+        margin: 3px;
+        padding: 7px;
+        display: inline-block;
+        /*  */
+        border: 1px solid #ffffff60;
+        border-radius: 10px;
+        background-color: #ffffff15; 
+    }
+    
+/* Fim */
+
+/* Social */
+    section#p-ancora {
+        margin-top: 15px;
+    }
+    section.certificacao {
+        width: 180px;
+        height: 110px;
+        margin: 5px;
+        padding: 5px;
+    }
+    div#social div.p {
+        height: 290px;
+        margin-bottom: 10px;
+        /*  */
+        font-size: 0.7em;
+    }
+    div.p div {
+        height: 195px;
+        margin: 5px 5px 0px 10px;
+    }
+    div#logica {
+        display: none;
+    }
+/* Fim */
+}
+/* Fim Responsividades */
+
+
+/* display: flex; Possibilita mobilidade*/
+/* justify-content:;  Alinha o conteúdo Horizontal*/
+/* align-items:; Centraliza Verticalmente*/

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Obrigatoriedade de Voto</title>
+</head>
+<body>
+    <h1>Calculadora de Voto</h1>
+    <label>Sua idade</label>
+    <input type="number" id="idade"> 
+    
+
+    <button onclick="calc()">Calcular Obrigatoriedade</button>
+    
+    <br><br>
+    
+    <label>Resultado</label>
+    <input type="text" id="resultado" disabled>
+    <br> <br>
+    <label>Idades com obrigação</label>
+    <input type="text" id="obrigatorio" disabled>
+
+    <script>
+        window.alert('Verificação de voto!')
+
+        function calc() {
+            let idade = Number(document.getElementById("idade").value);
+            obri = 'De 18 a 69 anos';
+            if (idade < 16) {
+				resul = "Você ainda não pode votar!";
+			} else if (idade >= 16 && idade <= 17) {
+				resul = "Seu voto é opcional!";
+			} else if (idade >= 18 && idade <= 69) {
+				resul = "Seu voto é obrigatório!";
+			} else if (idade >=70 && idade <=99) { 
+                resul = "Seu voto é opcional";
+            }else {
+                resul = "você ainda esta vivo?"
+            }
+            
+            document.getElementById("resultado").value = resul;
+            document.getElementById("obrigatorio").value = obri
+        }
+    </script>
+    <!--Dia 27/03/2023 - João Alves - Professora Leticia -->
+</body>
+</html>

@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+/*================================ IMPORT FONTS ================================*/
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,300;0,400;0,900;1,400;1,900&display=swap');   /*TITLE*/
+/*'Tourney'. lighter, normal, bolder*/
+
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;400;700;800&display=swap'); /*SUBTITLE*/
+/*'Tomorrow'. lighter, normal, bold*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');  
+/*'Passion One'. normal, bold, bolder*/
+
+    * {
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --bgc-body: #D1E1ED;
+    --bgc-01: #1f3b8f;
+    --bgc-02: #aac1ff;
+    --bgc-nav: #142f52;
+    --color-w: #fff;
+    --color-b: #000;
+
+    --font-title: 'Tourney', cursive, sans-serif;
+    --font-subtitle: 'Tomorrow', sans-serif;
+    --font-text: Arial;
+}
+body {
+    background-color: var(--bgc-body);
+}
+
+/*CONFIG HEADER*/
+a {
+    transition: 0.3s;
+
+    color: var(--color-w);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--color-w);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-subtitle);
+    background: var(--bgc-nav);
+    height: 9vh;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/*CONFIG MENU*/
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: var(--color-w);
+    margin: 8px;
+    transition: 0.3s;
+}
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*THE END CONFIG HEADER*/
+
+
+/*CONFIG MAIN*/
+main {
+    width: 1200px;
+    margin: auto;
+}
+
+/*CONFIG DIV*/
+.materia {
+    width: 1050px;
+    height: 320px;
+    margin: 0 auto 15px auto;
+    padding: 20px;
+    overflow-x: auto;  
+    overflow-y: hidden;  
+
+    background-color: var(--bgc-01);
+}
+
+.materia::-webkit-scrollbar{
+    background-color: var(--color-w);
+    height: 15px;
+    border: 1px solid #00000023;
+}
+.materia::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to right, #0EABE9, #80D0EE 60%);
+    border: 2px solid var(--color-w);
+    border-radius: 10px;
+}
+
+.materia h2 {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: var(--font-subtitle);
+    color: var(--color-w);
+}
+
+.aulas {
+    width: 100%;
+    height: 90%;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.v-aula {
+    min-width: 280px;
+    max-height: 280px;
+    margin-left: 2rem;
+    margin-bottom: 20px;
+
+    background-color: var(--bgc-02);
+    border-radius: 20px 20px 0px 20px;
+    border: 1px solid black;
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    color: var(--color-b);
+    text-align: center;
+    font-weight: bold ;
+}
+.v-aula iframe {
+    width: 100%;
+    height: 160px;
+    border-radius: 19px 19px 0px 0px;
+}
+.v-aula p {
+    position: relative  ;
+    display: inline;
+    padding: 5px
+}
+/*THE END CONFIG MAIN*/
+
+
+/*CONFIG FOOTER*/
+footer {
+    text-align: center;
+    font-size: 2em;
+}
+
+/*
+RESPOSIVIDADES
+1200 +
+1024 - 1199
+768 - 1023
+425 - 767
+*/
+@media screen and (min-width: 1600px) and (max-width: 1800px) {
+    .materia {
+        width: 1250px;
+        height: 370px;
+    } 
+
+    .v-aula {
+        min-width: 300px;
+        max-height: 280px;
+    }
+    .v-aula iframe {
+        height: 180px
+    }
+}
+@media screen and (min-width: 1350px) and (max-width: 1599px) {
+    .materia {
+        width: 1150px;
+        height: 350px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    
+    
+    main {
+        width: 100vw;
+    }
+    
+    .materia {
+        width: 96.3vw;
+    }
+    
+}
+@media screen and (min-width: 850px) and (max-width: 1023px) {
+    body {
+        background-color: var(--color-w);
+    }
+    
+    /*CONFIG NAV*/
+    .logo {
+        font-size: 2em;
+    }
+    nav {
+    height: 8vh;
+    }
+
+    /*CONFIG MAIN*/
+    main {
+        width: 100vw;
+    }
+    
+    .materia {
+        width: 96vw;
+    }
+    .aulas {
+    height: 80%;
+    }
+    .v-aula {
+        min-width: 250px;
+        height: 250px;
+        margin-left: 1.5rem;
+        margin-bottom: 20px;
+
+        font-size: 0.9em;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 849px) {
+    body {
+        background-color: var(--color-w);
+    }
+    
+    /*CONFIG NAV*/
+    .logo {
+        font-size: 2em;
+    }
+    a {
+        font-size: 1.1em;
+    }
+    nav {
+    height: 8vh;
+    }
+
+    /*CONFIG MAIN*/
+    main {
+        width: 100vw;
+    }
+    
+    .materia {
+        width: 98vw;
+        height: 290px;
+        padding: 10px;
+    }
+    .materia h2 {
+        font-size: 1.7em;
+    }
+    .aulas {
+    height: 70%;
+    }
+    .v-aula {
+        min-width: 230px;
+        height: 230px;
+        margin-left: 1.5rem;
+        margin-bottom: 20px;
+
+        font-size: 0.9em;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 649px) {
+    body {
+        background-color: var(--color-w);
+    }
+    
+    /*CONFIG NAV*/
+    .logo {
+        font-size: 2em;
+    }
+    a { 
+        font-size: 1em;
+    }
+    nav {
+    height: 6vh;
+    }
+
+    /*CONFIG MAIN*/
+    main {
+        width: 100vw;
+    }
+    
+    .materia {
+        width: 98vw;
+        height: 285px;
+        padding: 10px;
+    }
+    .materia h2 {
+        font-size: 1.7em;
+    }
+    .aulas {
+    height: 70%;
+    }
+    .v-aula {
+        min-width: 220px;
+        height: 220px;
+        margin-left: 1.5rem;
+        margin-bottom: 20px;
+
+        font-size: 0.7em;
+    }
+
+    footer {
+        font-size: 1.4em;
+    }
+}

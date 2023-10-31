@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Média de notas</title>
+</head>
+<body>
+    <h1>Calculadora de Média</h1>
+    <label>Nota 1</label>
+    <input type="number" id="valor1"> 
+    <label>Nota 2</label>
+    <input type="number" id="valor2"> 
+    <label>Nota 3</label>
+    <input type="number" id="valor3">
+    <br> <br>
+
+    <button onclick="calc()">Calcular Média</button>
+    
+    <br><br>
+    
+    <label>Resultado</label>
+    <input type="number" id="resultado" disabled>
+    <br> <br>
+    <label>Aprovação</label>
+    <input type="text" id="aprov" disabled>
+
+    <script>
+        // window.alert('Seja Bem Vindo a Calculadora!')
+
+        function calc() {
+            let valor1 = Number(document.getElementById("valor1").value);
+            let valor2 = Number(document.getElementById("valor2").value);
+            let valor3 =Number(document.getElementById("valor3").value);
+            var resultado = (valor1 + valor2 + valor3) / 3
+            document.getElementById("resultado").value = resultado;
+
+            if (resultado >6.9) {
+                aprov = 'Aluno Aprovado'
+            }
+            else if (resultado < 7 && resultado > 2.9) {
+                aprov = 'Aluno em Exame'
+            }
+            else {
+                aprov = 'Aluno Reprovado'
+            }
+
+            document.getElementById("aprov").value = aprov
+        }
+    </script>
+    <!--Dia 27/03/2023 - João Alves - Professora Leticia -->
+</body>
+</html>
