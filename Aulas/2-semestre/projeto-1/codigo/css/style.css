@@ -28,6 +28,7 @@
 }
 body {
     background-color: var(--bgc-body);
+    overflow-x: none;
 }
 
 /*CONFIG HEADER*/
