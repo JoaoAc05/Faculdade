@@ -27,8 +27,9 @@
     --font-text: Arial;
 }
 body {
+    width: 100%;
     background-color: var(--bgc-body);
-    overflow-x: none;
+    overflow-x: hidden;
 }
 
 /*CONFIG HEADER*/
@@ -64,6 +65,8 @@ nav {
 .nav-list {
     display: flex;
     list-style: none;
+    overflow-x: hidden;
+
 }
 .nav-list li {
     margin-left: 32px;
@@ -170,15 +173,16 @@ footer {
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
-    html {
-        overflow-y: hidden;
-    }
+    
     main {
-        width: 100vw;
+        max-width: 1199px;
+        width: 100%;
+        margin: auto;
     }
     
     .materia {
-        width: 96.3vw;
+        max-width: 1050px;
+        width: 100%;
     }
     
 }
@@ -218,6 +222,8 @@ footer {
 @media screen and (min-width: 650px) and (max-width: 849px) {
     body {
         background-color: var(--color-w);
+        overflow-x: hidden;
+
     }
     
     /*CONFIG NAV*/
@@ -259,6 +265,8 @@ footer {
 @media screen and (min-width: 300px) and (max-width: 649px) {
     body {
         background-color: var(--color-w);
+        overflow-x: hidden;
+        
     }
     
     /*CONFIG NAV*/
