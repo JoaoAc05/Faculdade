@@ -8,7 +8,7 @@ body {
     position: absolute;
     top: 8vh;
     right: 0;
-    transform: translateX(110%);
+    transform: translateX(0);
     transition: all 0.2s ease-in;
     opacity: 0;
     visibility: hidden;
