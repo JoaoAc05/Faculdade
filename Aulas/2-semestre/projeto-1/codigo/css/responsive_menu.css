@@ -3,13 +3,13 @@ body {
 }
 
 .nav-list {
-    width: 50vw;
+    width: 40vw;
     min-height: 92vh;
     position: absolute;
     top: 8vh;
     right: 0;
-    transform: translateX(0);
-    transition: all 0.5s ease-in;
+    transform: translateX(110%);
+    transition: all 0.2s ease-in;
     opacity: 0;
     visibility: hidden;
     
@@ -34,7 +34,7 @@ body {
     height: 2px;
     background: var(--color-w);
     margin: 8px;
-    transition: 0.3s;
+    transition: 0.6s;
 }
 .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
