@@ -8,7 +8,6 @@ body {
     position: absolute;
     top: 8vh;
     right: 0;
-    transform: translateX(0);
     transition: all 0.2s ease-in;
     opacity: 0;
     visibility: hidden;
@@ -50,7 +49,6 @@ body {
 .nav-list.active {
     opacity: 0.8;
     visibility: visible;
-    transform: translateX(0);
 }
 
 @keyframes navLinkFade {
