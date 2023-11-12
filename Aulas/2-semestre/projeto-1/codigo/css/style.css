@@ -154,13 +154,13 @@ footer {
 
 @media screen and (min-width: 1600px) and (max-width: 1800px) {
     .materia {
-        width: 1250px;
-        height: 370px;
+        width: 1350px;
+        height: 390px;
     } 
 
     .v-aula {
         min-width: 300px;
-        max-height: 280px;
+        max-height: 290px;
     }
     .v-aula iframe {
         height: 180px
