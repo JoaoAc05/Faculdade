@@ -105,14 +105,12 @@ main {
     font-weight: 700;
     font-family: var(--font-subtitle);
     color: var(--color-w);
-    display: contents;
-    position: fixed;
 }
 /*CONFIG AULAS*/
 .aulas {
     width: 100%;
     height: 90%;
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
 }
 
