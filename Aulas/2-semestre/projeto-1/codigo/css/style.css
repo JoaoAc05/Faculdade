@@ -150,7 +150,46 @@ footer {
 }
 
 /*CONFIG RESPONSIVIDADES*/
+@media screen and (min-width: 1231px) and (max-width: 2900px) {
+    main {
+        width: 1700px;
+        margin: auto;
+    }
+    .materia {
+        width: 1650px;
+        height: 490px;
+    } 
+
+    .v-aula {
+        min-width: 300px;
+        max-height: 290px;
+    }
+    .v-aula iframe {
+        height: 180px
+    }
+}
+@media screen and (min-width: 1801px) and (max-width: 2300px) {
+    main {
+        width: 1600px;
+        margin: auto;
+    }
+    .materia {
+        width: 1550px;
+        height: 490px;
+    } 
+
+    .v-aula {
+        min-width: 300px;
+        max-height: 290px;
+    }
+    .v-aula iframe {
+        height: 180px
+    }
+}
 @media screen and (min-width: 1600px) and (max-width: 1800px) {
+    main {
+        width: 1400px;
+    }
     .materia {
         width: 1350px;
         height: 390px;
