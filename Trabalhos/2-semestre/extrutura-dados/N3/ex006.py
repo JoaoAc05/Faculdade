@@ -1,0 +1,1 @@
+# Dados três vetores ordenados, implemente uma função que intercala e retorne o vetor resultante ordenado. Implemente uma função merge3_sort, que faça ordenação em um vetor utilizando a ordenação merge-sort.

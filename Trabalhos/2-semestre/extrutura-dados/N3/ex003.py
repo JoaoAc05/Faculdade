@@ -1,0 +1,1 @@
+# Faça um programa que leia n nomes e ordene-os pelo tamanho utilizando a ordenação por seleção. No final, o algoritmo deve mostrar todos os nomes ordenados.
