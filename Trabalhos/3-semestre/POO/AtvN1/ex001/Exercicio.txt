@@ -1,0 +1,6 @@
+1) As seguintes perguntas definem quais partes de um objeto:
+O que eu sei?
+Quem eu conheço?
+O que eu posso fazer?
+Dê um exemplo com uma definição de uma classe qualquer em Java (não precisa
+colocar o corpo dos métodos apenas a chamada deles).

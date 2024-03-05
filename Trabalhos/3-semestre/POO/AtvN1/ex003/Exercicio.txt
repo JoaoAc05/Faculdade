@@ -1,0 +1,2 @@
+3) Criando uma Classe Aluno. Levante os requisitos, crie a Classe com os tipos
+levantados. Implemente a classe, atribua dados, e print os resultados.
