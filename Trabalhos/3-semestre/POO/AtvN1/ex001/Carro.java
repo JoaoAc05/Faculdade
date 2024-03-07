@@ -31,18 +31,30 @@ public class Carro {
         System.out.println("Ano: " + anoFabricacao);
         System.out.println("Placa: " + placa);
     }
-
+    
+   
     public static void main(String[] args) {
         Carro fusca = new Carro();
+        Dono proprietario = new Dono();
 
         fusca.fabricante = "Volks";
         fusca.modelo = "Baratinha";
         fusca.anoFabricacao = 1935;
+
         fusca.placa = "fusca01";
         fusca.ligado = true;
 
         fusca.desligar();
         fusca.informacoes();
+
+        //Quem você conhece?
+        //Na alaogia da classe carro seria uma sub-classe ou metodo referente ao seu proprietario.
+        proprietario.nome = "Juninho da XJ";
+        proprietario.cnh = "CNH";
+        proprietario.carro = "Dono do fusquinha";
+        proprietario.informacoes();
     }
-    //A parte do quem você conheceu eu não consegui fazer nenhuma analogia
+
+    
+    
 }
