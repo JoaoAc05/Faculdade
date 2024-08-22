@@ -1,0 +1,4 @@
+Como vai funcionar este trabalho?
+
+Até final do semestre vai ser necessario entregar o CRUD completo, com integração a banco de dados e funcional.
+O desenvolvimento sera separado em etapas semanais onde para o seu desenvolvimento caso necessario você tera o auxilio da professora Leticia.

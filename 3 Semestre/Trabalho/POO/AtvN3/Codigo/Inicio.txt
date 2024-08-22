@@ -1,0 +1,98 @@
+Condições Minimas:
+Documentação de extrutura 
+4 Classes
+Arquivo unico executavel
+
+
+Ideia 1: Gerenciamento de estoque de cozinha
+Ideia 2: Agendamento de horarios
+
+
+Perguntas
+    1)Qual o ramo que irei atender?
+    2 - Agendamento de horarios para clinicas
+
+
+    2)Quem são meus usuários?
+    2 - Secretários(as), Doutores(as)
+
+
+    3)Quais são as classes principais para eu atender essa demanda?
+    2 - Entidade, Agenda, Usuário, Contas
+
+
+    4)Quais subclasses importantes fazem parte do processo? 
+    2 - Parcelas
+
+
+    5)Elencar as propriedades principais dos envolvidos no processo e os seus tipos
+    2 - Entidade (Paciente, Doutor) - Agenda (Horarios disponiveis, Horarios marcados) 
+      - Usuário (Comum, Super) - Contas (Pago, Pendente) - Parcelas (Vencida ou não, Paga ou não)
+
+
+    6)Quais as funções principais que minha aplicação precisa atender?
+    2 - Agendemento de horario e Gerenciamento dos pagamentos
+
+
+    7)Tenho funções vinculadas? De quem pra quem?
+    2 - Sim. Para se ter um agendamento é necessario ter a entidade cadastrada.
+             Para ter um contas, é necessario se ter um agendamento marcado.
+             Para se ter um recebimento é necessario se ter uma parcela.
+    
+
+    8)Quais os itens principais necessarios para inicializar essa classe?
+    Entidade
+        - Indice ( Protected - PK)
+        - Nome   ( Default )
+        - CPF    ( Protected )
+        - Idade  ( Protected )
+        - Endereço ( Protected )
+        - Tipo ( Protected )
+
+    Usuário 
+        - Indice ( Protected - PK )
+        - Loging ( Private )
+        - Senha ( Private )
+        - Nome ( Protected )
+        - Permições ( Protected )
+
+    Agendamento 
+        - Indice ( Protected - PK )
+        - Horarios_Agendado ( Default )
+        - Cod_Medico ( FK )
+        - Cod_Paciente ( FK )
+
+    Contas
+        - Indice ( Protected - PK )
+        - Cod_Agendamento ( FK )
+        - Cod_Entidade ( FK )
+        - Nome_Entidade ( FK )
+        - Valor_Agendamento ( Protected )
+
+    Parcelas 
+        - Indice ( Protected - PK )
+        - Cod_Contas ( FK )
+        - Data_Lançamento ( Default )
+        - Data_Vencimento ( Default )
+        - Valor_Pago ( Default )
+        - Valor_Pendente ( Default )
+        - Saldo ( Default )
+        - Status [Pago, Pendente] (Default)
+    
+    9)Quais informações de cada classe podem ser acessadas ou não por outra classe?
+
+    Tabelas Entidade / Agenda / Usuário / Contas são tabelas principais 
+    Tabela Contas -> Pode ser acessada pela parcelas
+
+
+    10)Simulando o processo, todos os dados que defini são realmente relevantes?
+    Sim
+
+
+
+    
+
+    
+
+
+

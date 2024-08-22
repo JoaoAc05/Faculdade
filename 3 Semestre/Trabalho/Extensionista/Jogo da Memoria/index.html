@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Adivinhação</title>
+</head>
+<body>
+
+<img src="image/Unifasipe.png" alt="Imagem" id="game-image">
+
+<div id="game-container">
+    <h1>Jogo da Adivinhação</h1>
+
+    <p id="instructions">Adivinhe o número entre 1 e 100:</p>
+    <input type="number" id="guessInput" min="1" max="100" required placeholder="Digite um número entre 1 e 100:">
+
+    <button onclick="checkGuess()">Enviar</button>
+
+    <div id="message"></div>
+</div>
+<footer><p>Curso de ADS</p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
