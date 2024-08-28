@@ -1,0 +1,87 @@
+Tabela Usuario
+
+public Indice (chave primária)
+public Nome (string)
+protected Login (string)
+protected Senha (string)
+-	-	-	-	-
+protected cadastrarUsuario(Nome, Loging, Senha)
+protected alterarEntidade()
+protected deletarEntidade()
+
+/ - - - - // - - - - /
+Tabela Entidade
+
+public Indice (chave primária)
+public Nome (string)
+protected CPF_CNPJ (string)
+protected Endereco (string)
+protected Bairro (string)
+protected Cidade (string)
+protected UF (string)
+public Tipo (integer: 0 = Cliente, 1 = Fornecedor, 3 = Transportador, 4 = Vendedor)
+protected Cod_Vendedor (chave estrangeira para a própria tabela Entidade, opcional para clientes)
+protected Porcentagem_Vendedor (double, apenas para vendedores)
+-	-	-	-	-	-	-	-	-	-	-	-
+protected cadastrarEntidade(Nome, CPF_CNPJ, Endereco, Bairro, Cidade, UF, Tipo)
+protected alterarEntidade()
+protected deletarEntidade()
+protected vincularVendedorEntidade()
+protected buscarEntidade()
+
+/ - - - - // - - - - /
+Tabela Produto
+
+public Indice (chave primária)
+public Nome (string)
+protected Valor_Unitario (double)
+protected UM (string)
+-	-	-	-	-
+protected cadastrarProduto(Nome, Valor_Unitario, UM)
+protected alterarProduto()
+protected deletarProduto()
+protected buscarProduto()
+
+/ - - - - // - - - - /
+Tabela Estoque extend Produto
+
+public Indice (chave primária)
+protected Cod_Produto (chave estrangeira para a tabela Produto)
+protected Quantidade (double)
+-	-	-	-	-	-	-	-	-
+protected insertEstoque(Cod_Produto, Quantidade)
+protected updateEstoque()
+protected deleteEstoque()
+protected buscarEstoque()
+
+/ - - - - // - - - - /
+Tabela Pedido
+
+public Indice (chave primária)
+protected Cod_Cliente (chave estrangeira para a tabela Entidade, onde Tipo = 0)
+protected Cod_Vendedor (chave estrangeira para a tabela Entidade, onde Tipo = 4)
+protected Vlr_Total (double)
+protected Qtd_Total (double)
+protected Status (integer: 0 = aberto, 1 = finalizado, 2 cancelado)
+protected Cod_Usuario (chave estrangeira para a tabela Usuario)	
+-	-	-	-	-	-	-	-	-	-	-
+protected cadastrarPedido(Cod_Cliente, Cod_Vendedor)
+protected alterarPedido()
+protected deletarPedido()
+protected finalizarPedido()
+protected buscarPedido()
+
+/ - - - - // - - - - /
+Tabela Itens_Pedido extends Pedido
+
+public Indice (chave primária)
+protected Cod_Pedido (chave estrangeira para a tabela Pedido)
+protected Cod_Produto (chave estrangeira para a tabela Produto)
+protected Quantidade (double)
+protected Valor_Unitario (double)
+protected Valor_Desconto (double)
+protected Valor_Total (double)
+-	-	-	-	-	-	-	-	-
+protected incluirProdutoPedido(Cod_Produto, Quantidade, Valor_Unitario, Valor_Desconto, Valor_Total)
+protected alterarProdutoPedido()
+protected deletarProdutoPedido()
