@@ -1,13 +1,13 @@
 {
   "name": "curso02",
   "version": "1.0.0",
-  "description": "",
+  "description": "Fazendo os primeiros pontos do projeto III",
   "main": "src/app.js",
   "scripts": {
     "start": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "João Alves",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
@@ -19,5 +19,14 @@
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoAc05/Faculdade.git#main"
+  },
+  "bugs": {
+    "url": "https://github.com/JoaoAc05/Faculdade/issues"
+  },
+  "homepage": "https://github.com/JoaoAc05/Faculdade/tree/main#readme"
 }
