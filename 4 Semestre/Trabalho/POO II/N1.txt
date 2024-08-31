@@ -5,6 +5,8 @@ public Nome (string)
 protected Login (string)
 protected Senha (string)
 -	-	-	-	-
+public get()...
+public set()...
 protected cadastrarUsuario(Nome, Loging, Senha)
 protected alterarEntidade()
 protected deletarEntidade()
@@ -23,6 +25,8 @@ public Tipo (integer: 0 = Cliente, 1 = Fornecedor, 3 = Transportador, 4 = Vended
 protected Cod_Vendedor (chave estrangeira para a própria tabela Entidade, opcional para clientes)
 protected Porcentagem_Vendedor (double, apenas para vendedores)
 -	-	-	-	-	-	-	-	-	-	-	-
+public get()...
+public set()...
 protected cadastrarEntidade(Nome, CPF_CNPJ, Endereco, Bairro, Cidade, UF, Tipo)
 protected alterarEntidade()
 protected deletarEntidade()
@@ -37,6 +41,8 @@ public Nome (string)
 protected Valor_Unitario (double)
 protected UM (string)
 -	-	-	-	-
+public get()...
+public set()...
 protected cadastrarProduto(Nome, Valor_Unitario, UM)
 protected alterarProduto()
 protected deletarProduto()
@@ -49,6 +55,8 @@ public Indice (chave primária)
 protected Cod_Produto (chave estrangeira para a tabela Produto)
 protected Quantidade (double)
 -	-	-	-	-	-	-	-	-
+public get()...
+public set()...
 protected insertEstoque(Cod_Produto, Quantidade)
 protected updateEstoque()
 protected deleteEstoque()
@@ -65,6 +73,8 @@ protected Qtd_Total (double)
 protected Status (integer: 0 = aberto, 1 = finalizado, 2 cancelado)
 protected Cod_Usuario (chave estrangeira para a tabela Usuario)	
 -	-	-	-	-	-	-	-	-	-	-
+public get()...
+public set()...
 protected cadastrarPedido(Cod_Cliente, Cod_Vendedor)
 protected alterarPedido()
 protected deletarPedido()
@@ -82,6 +92,8 @@ protected Valor_Unitario (double)
 protected Valor_Desconto (double)
 protected Valor_Total (double)
 -	-	-	-	-	-	-	-	-
+public get()...
+public set()...
 protected incluirProdutoPedido(Cod_Produto, Quantidade, Valor_Unitario, Valor_Desconto, Valor_Total)
 protected alterarProdutoPedido()
 protected deletarProdutoPedido()

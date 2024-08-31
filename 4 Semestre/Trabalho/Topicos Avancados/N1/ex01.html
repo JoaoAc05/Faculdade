@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html style="display: flex; align-items: center; justify-content: center;">
+ <head>
+   <title>Atividade N1 4º Semestre</title>
+   <script type="text/javascript" src="script.js"></script>
+ </head>
+ <body>
+   Fatorial de: <input id="numero" type="number"> <br />
+   <button onclick="fatorial()">Exibir</button><br />
+   Resposta: <div id='resposta'></div>
+ </body>
+</html>
+
+<script type="text/javascript">
+    function fatorial(){
+    var numero = parseInt(document.getElementById('numero').value);
+    var resposta = document.getElementById('resposta');
+    var resultado = 1;
+
+    for(var count = 1 ; count <= numero ; count++){
+      resultado *= count;
+    }
+
+  resposta.innerHTML =resultado;
+  //João Alves Cordeiro
+  //Andre Luis Pieper
+}
+</script>
+

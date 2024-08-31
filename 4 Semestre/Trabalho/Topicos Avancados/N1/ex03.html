@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="display: flex; align-items: center; justify-content: center;">
+<head>
+    <title>Atividade N1 4º Semestre</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div>
+        Aluno 1 <br />
+        nota1: <input id="nota1" type="number"> <br />
+        nota2: <input id="nota2" type="number"> <br />
+        Resposta: <div id='resposta1'></div>
+        <br />
+
+        Aluno 2 <br />
+        nota1: <input id="nota3" type="number"> <br />
+        nota2: <input id="nota4" type="number"> <br />
+        Resposta: <div id='resposta2'></div>
+        <br />
+
+        Aluno 3 <br />
+        nota1: <input id="nota5" type="number"> <br />
+        nota2: <input id="nota6" type="number"> <br />
+        Resposta: <div id='resposta3'></div>
+        <br />
+        
+        Aluno 4 <br />
+        nota1: <input id="nota7" type="number"> <br />
+        nota2: <input id="nota8" type="number"> <br />
+        Resposta: <div id='resposta4'></div>
+        <br />
+
+        Aluno 5 <br />
+        nota1: <input id="nota9" type="number"> <br />
+        nota2: <input id="nota10" type="number"> <br />
+        Resposta: <div id='resposta5'></div>
+        <br />
+
+        <button onclick="notas()">Exibir</button><br />
+    </div>
+
+    <script type="text/javascript">
+        function calcularMedia(nota1, nota2) {
+            return (nota1 + nota2) / 2;
+        }
+
+        function verificarAprovacao(media) {
+            return media >= 7 ? 'Aprovado' : 'Reprovado';
+        }
+
+        function notas() {
+            for (let i = 1; i <= 5; i++) {
+                let nota1 = parseFloat(document.getElementById(`nota${(i - 1) * 2 + 1}`).value);
+                let nota2 = parseFloat(document.getElementById(`nota${(i - 1) * 2 + 2}`).value);
+                let media = calcularMedia(nota1, nota2);
+                let estado = verificarAprovacao(media);
+                document.getElementById(`resposta${i}`).innerHTML = `Média: ${media}. ${estado}`;
+            }
+        }
+    //João Alves Cordeiro
+    //André Luis Pieper
+    </script>
+    
+</body>
+</html>
