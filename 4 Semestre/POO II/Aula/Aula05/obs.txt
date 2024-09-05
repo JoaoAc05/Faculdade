@@ -1,0 +1,27 @@
+Migrate
+- Sincronizar ações do schemas com o banco de dados
+
+NODE
+EXPRESS - FRAMEWORK QUE FACILITA A CRIAÇÃO DE SERVIÇOS (SERVIDORES - ROTAS)
+PRISMA - AUTOMAÇÃO
+SQLITE - BANCO DE DADOS
+
+-   -   -   -   -   -   -
+MVC - MODEL, VIEW, CONTROLLER
+
+CONTROLER - ROTAS / INSERTS, UPDATES, DELETES / FUNÇÕES
+MODEL - CONTROLE DE DADOS
+VIEW - 
+
+-   -   -   -   -   -   -   -
+
+1 - DATA SOURCE 
+2 - PRISMA SCHEMAS
+3 - 
+4 - CONEXÃO PRISMACLIENT ( CONEXÃO ORM COM APLICAÇÃO )
+5 - CONTROLLER
+
+-   -   -   -   -   -   -   -   -
+EXTENSÕES VSCODE
+-   PRISMA
+-   THUNDER CLIENT (Funciona como um insominia)

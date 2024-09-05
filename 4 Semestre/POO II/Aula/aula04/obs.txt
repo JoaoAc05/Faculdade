@@ -1,0 +1,2 @@
+Migrate
+- Sincronizar ações do schemas com o banco de dados

@@ -1,0 +1,33 @@
+O que é uma API
+1 - APIs são mecanismos que permitem que dois componentes de software se comuniquem usando um conjunto de definições e protocolos.
+
+API TCP IP 
+API HTTP
+API SOCKET
+API REST
+
+	GET - PEGAR
+	PUT - ALTERAR
+	DELETE - DELETAR
+	POST - INSERIR / SALVAR
+/ - - - - - - - - - - - /
+NODE = JAVA SCRIPT PARA BACKEND (Server Side)
+Construir aplicações, servidores, serviços
+/ - - - - - - - - - - - /
+EXPRESS = FRAMEWORK QUE FACILITA O LEVANTAMENTO DE SERVIÇOS/SERVIDORES DE JAVA SCRIPT
+UTILIZADO JUNTO COM O NODE
+/ - - - - - - - - - - - /
+MVC (MODEL VIEW CONTROLLER) padrão de arquitetura de software que separa a sua aplicação em 3 camadas.
+Interação do usuário - View
+Manipulação de dados - Model
+Camada de controle - Controller
+
+Model responsabilidade dos models é representar o negócio. Também é responsável pelo acesso e manipulação dos dados na sua aplicação.
+
+View é responsável pela interface que será apresentada, mostrando as informações do model para o usuário.
+
+Controller é a camada de controle, responsável por ligar o model e a view.
+/ - - - - - - - - - - - /
+
+
+
