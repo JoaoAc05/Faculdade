@@ -1,0 +1,37 @@
+VELOCIDADE DO SOM = 340 M/S
+VELOCIDADE DO SOM = 34000 CM/S
+
+De acordo com o tempo do retorno do eco, calcule a distancia do objeto
+1A)
+Tempo de echo = 0,058
+(34000 * 0,058)/2 = 986cm
+
+1B)
+Tempo de echo = 1,176
+(34000 * 1,176)/2 = 19.992cm
+
+1C) 
+Tempo de echo = 0,176
+(34000 * 0,176)/2 = 2.992cm
+
+1D)
+Tempo de echo = 0,882
+(34000 * 0,882)/2 = 14.994cm
+
+-	-	-	-	-
+De acordo com a distancia do objeto, calcule o tempo do retorno do eco
+2A)
+Distância = 5cm
+(2 * 5)/34000 =~ 0,000294s
+
+2B)
+Distância = 70cm
+(2 * 70)/34000 =~ 0,004117s
+
+2C)
+Distância = 3m
+(2 * 300)/34000 =~ 0,0176s
+
+2D)
+Distância = 175cm
+(2 * 175)/34000 =~ 0,0102s

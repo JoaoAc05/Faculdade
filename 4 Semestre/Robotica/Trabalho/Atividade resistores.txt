@@ -1,0 +1,37 @@
+Resistores
+
+De acordo com as imagens, calcule a resistência e a variação dos resistores
+1A)
+220 Ω 5%
+
+1B)
+360 Ω 1%
+
+1C)
+10000 Ω 10% (10KΩ 10%)
+
+1D)
+910000 Ω 10% (910kΩ 10%)
+
+1E)
+330 Ω 2%
+---------------------------
+De acordo com os esquemas de ligação com led, calcule a resistencia necessaria para cada resistor.
+2A)
+(5 - 2,5) / 0,02 = 125 = Resistor de 130 Ω
+
+2B)
+12 - (1,8 + 2,5) / 0,02 = 385 = Resistor de 390 Ω
+
+2C)
+Vermelho (5 - 1,8) / 0,02 = 160 = Resistor de 160 Ω
+Verde (5 - 2,0) / 0,02 = 150 = Resistor de 150 Ω
+
+2D)
+(12 - (1,8 + 1,8 + 2,5)) / 0,02 = 295 = Resistor de 300 Ω
+Verde (12 - 2,0) / 0,02 = 500 = Resistor de 510 Ω
+
+2E)
+Vermelho (5 - 1,8) / 0,02 = 160 = Resistor de 160 Ω
+Amarelo (5 - 1,8) / 0,02 = 160 = Resistor de 160 Ω
+Verde (5 - 2,0) / 0,02 = 150 = Resistor de 150 Ω
