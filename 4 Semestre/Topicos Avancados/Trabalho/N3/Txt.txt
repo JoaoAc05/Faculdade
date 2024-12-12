@@ -1,0 +1,6 @@
+Prjeto desenvolvido com a base aplicada em aula durante o 3 e 4 semestre nas aulas de POO I e II.
+
+Separado por router e controller.
+Aquivo sql de create table e insert dos dados estão na raiz do projeto.
+
+Aluno João Alves Cordeiro

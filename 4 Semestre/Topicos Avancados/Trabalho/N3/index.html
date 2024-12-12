@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #555;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 20px auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        async function carregarProdutos() {
+         try {
+        const response = await fetch('http://localhost:3000/produtos');
+        if (!response.ok) {
+            throw new Error('Erro ao buscar os produtos');
+        }
+        const produtos = await response.json();
+        console.log(produtos);  // Verifique no console do navegador
+
+        const tabela = document.getElementById('produtos-tabela');
+        tabela.innerHTML = '';
+
+        if (produtos.length === 0) {
+            tabela.innerHTML = '<tr><td colspan="5">Nenhum produto encontrado</td></tr>';
+        } else {
+            produtos.forEach(produto => {
+                const linha = `<tr>
+                    <td>${produto.id}</td>
+                    <td>${produto.nome}</td>
+                    <td>${produto.preco}</td>
+                    <td>${produto.id_fornec}</td>
+                    <td>${produto.categoria_id}</td>
+                </tr>`;
+                tabela.innerHTML += linha;
+            });
+        }
+    } catch (error) {
+        console.error('Erro ao carregar os produtos:', error);
+        alert('Não foi possível carregar os produtos.');
+    }
+}
+    </script>
+</head>
+<body>
+    <h1>Gerenciamento de Produtos</h1>
+    <h2>Lista de Produtos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>ID Fornecedor</th>
+                <th>ID Categoria</th>
+            </tr>
+        </thead>
+        <tbody id="produtos-tabela"></tbody>
+    </table>
+    <button onclick="carregarProdutos()">Carregar Produtos</button>
+</body>
+</html>
