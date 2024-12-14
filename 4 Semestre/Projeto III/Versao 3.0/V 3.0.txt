@@ -1,0 +1,1 @@
+Adicionando prisma para realizar ORM, adicionando toda estrutura do banco de dados no schema.prisma e todos os controllers e routers

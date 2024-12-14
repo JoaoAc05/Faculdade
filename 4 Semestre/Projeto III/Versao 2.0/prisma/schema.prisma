@@ -1,0 +1,22 @@
+// https://www.prisma.io/docs/orm/overview/databases/postgresql
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url = env("POSTGRES_PRISMA_URL") // usa pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // usa conexão direta
+}
+
+model Aluno {
+  indice Int @id @default (autoincrement())
+  nome String
+  ra String
+  cpf String
+  imei Int
+  status Int @default(0)
+  hora_post DateTime?
+}

@@ -1,0 +1,1 @@
+Adicionado algumas rotas e validações que faltavam e adicionado autenticação via JWT no login dos alunos e professores 

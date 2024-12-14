@@ -1,0 +1,1 @@
+Melhoria da versão 1.0 incrementando validação de tempo (5 segundos)
